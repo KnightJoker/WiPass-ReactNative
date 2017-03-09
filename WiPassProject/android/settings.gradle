@@ -1,0 +1,3 @@
+rootProject.name = 'WiPassProject'
+
+include ':app'
