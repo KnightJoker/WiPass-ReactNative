@@ -1,18 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import { AppRegistry } from 'react-native'
+import App from './App/Containers/App'
 
-import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
-
-class WiPassApp extends Component {
-    render() {
-        return (
-            <Text>Hello world!</Text>
-        );
-    }
-}
-
-AppRegistry.registerComponent('WiPassProject', () => WiPassApp);
+AppRegistry.registerComponent('WiPassProject', () => App)
