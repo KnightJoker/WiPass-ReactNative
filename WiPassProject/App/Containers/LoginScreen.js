@@ -10,7 +10,9 @@ import {
     Text,
     StyleSheet,
     View,
-    Image
+    Image,
+    StatusBar,
+    TextInput,
 } from 'react-native';
 
 class LoginScreen extends Component {
@@ -18,8 +20,10 @@ class LoginScreen extends Component {
         return (
 
             <View style={styles.container}>
+                <StatusBar barStyle={'light-content'}></StatusBar>
                 <Image source={images.logo} style={styles.eLogo}></Image>
-                <Text style={styles.welcome}>Welcome to WiPass~</Text>
+                <Text style={styles.welcome}>WiPass</Text>
+                <TextInput style={styles.textField}></TextInput>
             </View>
 
         );

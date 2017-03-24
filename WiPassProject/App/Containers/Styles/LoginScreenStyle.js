@@ -7,17 +7,26 @@ import { StyleSheet } from 'react-native'
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        // justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#29292b',
     },
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
+        marginTop: 70,
+        color: '#dcdcdc',
+        marginBottom: 100,
     },
     eLogo: {
-        marginTop: 77,
-        marginBottom: 44
+        marginTop: 20,
+        marginBottom: 44,
+        top: 100,
+    },
+    textField: {
+        height: 30,
+        backgroundColor: '#ffffff',
+        marginLeft: 35,
+        marginRight: 35,
     },
 });
