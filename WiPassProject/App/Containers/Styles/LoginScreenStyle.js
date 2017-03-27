@@ -10,6 +10,7 @@ export default styles = StyleSheet.create({
         // justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#29292b',
+
     },
     welcome: {
         fontSize: 20,
@@ -23,10 +24,33 @@ export default styles = StyleSheet.create({
         marginBottom: 44,
         top: 100,
     },
+    textView: {
+        flexDirection: 'row',
+        width:'100%',
+        height:40,
+        backgroundColor:'#29292b',
+    },
     textField: {
         height: 30,
-        backgroundColor: '#ffffff',
-        marginLeft: 35,
-        marginRight: 35,
+        // backgroundColor: '#f3d432',
+        width:'70%',
+        marginLeft:20,
+        marginTop:8,
+
     },
+    icon : {
+        height: 22,
+        width: 18,
+        marginLeft:30,
+        marginTop:10,
+    },
+    lineView: {
+        height: 1,
+        backgroundColor:'#dcdcdc',
+        // width:'82%',
+        // marginLeft:100,
+        paddingLeft:320,
+        // marginRight:30,
+
+    }
 });

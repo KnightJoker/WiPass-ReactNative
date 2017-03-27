@@ -20,10 +20,18 @@ class LoginScreen extends Component {
         return (
 
             <View style={styles.container}>
+
                 <StatusBar barStyle={'light-content'}></StatusBar>
                 <Image source={images.logo} style={styles.eLogo}></Image>
                 <Text style={styles.welcome}>WiPass</Text>
-                <TextInput style={styles.textField}></TextInput>
+
+                <View style={styles.textView}>
+                    <Image source={images.user} style={styles.icon}></Image>
+                    <TextInput style={styles.textField} placeholder={'用户名'}></TextInput>
+                </View>
+
+                <View style={styles.lineView}></View>
+
             </View>
 
         );

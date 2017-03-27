@@ -6,7 +6,7 @@
 const images = {
 
     logo: require('../Imgs/Logo.png'),
-
+    user: require('../Imgs/ic_user_gray.png'),
 }
 
 export default images
