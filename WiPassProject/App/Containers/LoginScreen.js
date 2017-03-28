@@ -13,7 +13,14 @@ import {
     Image,
     StatusBar,
     TextInput,
+    TouchableHighlight,
+    Button,
+    Alert,
 } from 'react-native';
+
+const onButtonPress = () => {
+    Alert.alert('Button has been pressed!');
+};
 
 class LoginScreen extends Component {
     render() {
@@ -27,10 +34,20 @@ class LoginScreen extends Component {
 
                 <View style={styles.textView}>
                     <Image source={images.user} style={styles.icon}></Image>
-                    <TextInput style={styles.textField} placeholder={'用户名'}></TextInput>
+                    <TextInput style={styles.textField} placeholder={'User'} placeholderTextColor={'#8c8c8c'}></TextInput>
                 </View>
-
                 <View style={styles.lineView}></View>
+
+                <View style={styles.textView}>
+                    <Image source={images.password} style={styles.icon}></Image>
+                    <TextInput style={styles.textField} placeholder={'Password'} placeholderTextColor={'#8c8c8c'} secureTextEntry={true}></TextInput>
+                </View>
+                <View style={styles.lineView}></View>
+
+
+                <TouchableHighlight style={styles.button} onPress={onButtonPress} underlayColor={'#29292b'}>
+                    <Text style={styles.buttonText}>LOGIN</Text>
+                </TouchableHighlight>
 
             </View>
 

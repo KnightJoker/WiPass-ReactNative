@@ -32,10 +32,10 @@ export default styles = StyleSheet.create({
     },
     textField: {
         height: 30,
-        // backgroundColor: '#f3d432',
         width:'70%',
         marginLeft:20,
         marginTop:8,
+       color: '#dcdcdc',
 
     },
     icon : {
@@ -45,12 +45,29 @@ export default styles = StyleSheet.create({
         marginTop:10,
     },
     lineView: {
-        height: 1,
+        height: 0.5,
         backgroundColor:'#dcdcdc',
         // width:'82%',
         // marginLeft:100,
         paddingLeft:320,
         // marginRight:30,
+    },
+    //
+    button: {
 
-    }
+        marginTop:30,
+        backgroundColor:'#2CBF67',
+        height:40,
+        width:'84%',
+        marginTop: 70,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    buttonText: {
+        color: '#dcdcdc',
+        // height:30,
+        // alignItems: 'center',
+        fontSize:20,
+    },
+
 });
