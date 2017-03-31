@@ -31,7 +31,8 @@ class LoginScreen extends Component {
     render() {
         return (
 
-            <ScrollView scrollEnabled={false} ref="scrollView"  style={styles.container} contentContainerStyle={{alignItems: 'center'}}>
+            <ScrollView scrollEnabled={false} ref="scrollView" style={styles.container}
+                        contentContainerStyle={{alignItems: 'center'}}>
                 <View style={styles.container1}>
 
                     <StatusBar barStyle={'light-content'}></StatusBar>
@@ -51,7 +52,9 @@ class LoginScreen extends Component {
 
                     <View style={styles.textView}>
                         <Image source={images.password} style={styles.icon}></Image>
-                        <TextInput style={styles.textField} placeholder={'Password'} placeholderTextColor={'#8c8c8c'}
+                        <TextInput ref="textInput" style={styles.textField} placeholder={'Password'}
+                                   placeholderTextColor={'#8c8c8c'} onBlur={this._reset.bind(this)}
+                                   onFocus={this._onFocus.bind(this, 'textInput')}
                                    secureTextEntry={true}></TextInput>
                     </View>
                     <View style={styles.lineView}></View>
