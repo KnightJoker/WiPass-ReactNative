@@ -3,6 +3,7 @@
  */
 
 import React, {Component} from 'react';
+import HomeScreen from './HomeScreen'
 import images from  '../Themes/Images'
 import styles from './Styles/LoginScreenStyle'
 import {
@@ -19,9 +20,11 @@ import {
     ScrollView
 } from 'react-native';
 import ReactNative from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
 const onButtonPress = () => {
-    Alert.alert('Button has been pressed!');
+    // Alert.alert('Button has been pressed!');
+    navigate('Home',{user:'Lucy'});
 };
 
 
@@ -86,5 +89,11 @@ class LoginScreen extends Component {
     }
 
 }
+
+const SimpleApp = StackNavigator({
+    Home: {screen: HomeScreen},
+    Login:{screen:LoginScreen},
+
+});
 
 export default LoginScreen
