@@ -3,7 +3,7 @@
  */
 
 import React, {Component} from 'react';
-import HomeScreen from './HomeScreen'
+// import HomeScreen from './HomeScreen'
 import images from  '../Themes/Images'
 import styles from './Styles/LoginScreenStyle'
 import {
@@ -20,18 +20,29 @@ import {
     ScrollView
 } from 'react-native';
 import ReactNative from 'react-native';
-import { StackNavigator } from 'react-navigation';
+// import { StackNavigator } from 'react-navigation';
 
-const onButtonPress = () => {
-    // Alert.alert('Button has been pressed!');
-    navigate('Home',{user:'Lucy'});
-};
+// const onButtonPress = () => {
+//     Alert.alert('Button has been pressed!');
+//     navigate('Home',{user:'Lucy'});
+//     // navigate('Home', { name: 'Jane' });
+// };
 
 
 class LoginScreen extends Component {
 
 
+    constructor() {
+        super()
+        this.onButtonPress = this.onButtonPress.bind(this)
+    }
+    // static navigationOptions = {
+    //     title: 'Welcome',//设置标题内容
+    // };
+
     render() {
+
+        const { navigate } = this.props.navigation;
         return (
 
             <ScrollView scrollEnabled={false} ref="scrollView" style={styles.container}
@@ -63,7 +74,7 @@ class LoginScreen extends Component {
                     <View style={styles.lineView}></View>
 
 
-                    <TouchableHighlight style={styles.button} onPress={onButtonPress} underlayColor={'#29292b'}>
+                    <TouchableHighlight style={styles.button} onPress={this.onButtonPress} underlayColor={'#29292b'}>
                         <Text style={styles.buttonText}>LOGIN</Text>
                     </TouchableHighlight>
 
@@ -88,12 +99,15 @@ class LoginScreen extends Component {
         }, 100);
     }
 
+    onButtonPress() {
+        //
+        const { navigate } = this.props.navigation;
+        // Alert.alert('Button has been pressed!');
+        navigate('Home',{user:'Lucy'});
+        // navigate('Home', { name: 'Jane' });
+    };
+
 }
 
-const SimpleApp = StackNavigator({
-    Home: {screen: HomeScreen},
-    Login:{screen:LoginScreen},
-
-});
 
 export default LoginScreen
