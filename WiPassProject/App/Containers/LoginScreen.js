@@ -92,6 +92,7 @@ class LoginScreen extends Component {
 
     _onFocus(refName) {
 
+        // console.log('sssss');
         setTimeout(() => {
 
             let scrollResponder = this.refs.scrollView.getScrollResponder();

@@ -22,14 +22,14 @@ export default styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        marginTop: 70,
+        marginTop: 50,
         color: '#dcdcdc',
         marginBottom: 100,
     },
     eLogo: {
         marginTop: 20,
         marginBottom: 44,
-        top: 100,
+        top: 20,
     },
     textView: {
         flexDirection: 'row',

@@ -29,7 +29,16 @@ import {
 // }
 
 const App = StackNavigator({
-    Login: {screen: LoginScreen},
+    Login: {
+        screen: LoginScreen,
+        navigationOptions: {
+            header: {  // 导航栏相关设置项
+                style: {
+                    backgroundColor: '#29292b'
+                },
+            },
+        }
+    },
     Home: {screen: HomeScreen},
 });
 
