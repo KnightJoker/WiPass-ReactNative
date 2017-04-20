@@ -39,7 +39,16 @@ const App = StackNavigator({
             },
         }
     },
-    Home: {screen: HomeScreen},
+    Home: {
+        screen: HomeScreen,
+        navigationOptions: {
+            header: {  // 导航栏相关设置项
+                style: {
+                    backgroundColor: '#29292b'
+                },
+            },
+        }
+    },
 });
 
 export default App

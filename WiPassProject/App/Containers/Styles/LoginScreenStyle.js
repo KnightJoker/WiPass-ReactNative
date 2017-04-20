@@ -22,7 +22,7 @@ export default styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        marginTop: 50,
+        marginTop: 0,
         color: '#dcdcdc',
         marginBottom: 100,
     },
