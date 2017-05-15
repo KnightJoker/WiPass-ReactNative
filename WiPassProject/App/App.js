@@ -31,23 +31,22 @@ import {
 const App = StackNavigator({
     Login: {
         screen: LoginScreen,
+
         navigationOptions: {
-            header: {  // 导航栏相关设置项
-                style: {
-                    backgroundColor: '#29292b'
-                },
+            headerStyle: {
+                backgroundColor: '#29292b',
+                elevation: null
             },
-        }
+        },
     },
     Home: {
         screen: HomeScreen,
         navigationOptions: {
-            header: {  // 导航栏相关设置项
-                style: {
-                    backgroundColor: '#29292b'
-                },
+            headerStyle: {
+                backgroundColor: '#29292b',
+                elevation: null
             },
-        }
+        },
     },
 });
 
