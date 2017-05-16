@@ -9,7 +9,7 @@
 
 **Step 2:** cd to the cloned repo:
 
-**Step 3:** Install the Application with `npm install`
+**Step 3:** Install the Application with `npm install` and `npm install --save react-navigation`
 
 
 ## :arrow_forward: How to Run App
