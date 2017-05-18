@@ -5,11 +5,17 @@
 import React, { Component } from 'react';
 import LoginScreen from './Containers/LoginScreen'
 import HomeScreen from './Containers/HomeScreen'
+import Images from './Themes/Images'
 import {
     AppRegistry,
     Text,
     StyleSheet,
-    View
+    View,
+    Button,
+    Image,
+    TouchableHighlight,
+    Alert
+
 } from 'react-native';
 import {
     StackNavigator,
@@ -44,10 +50,24 @@ const App = StackNavigator({
         navigationOptions: {
             headerStyle: {
                 backgroundColor: '#29292b',
-                elevation: null
+                elevation: null,
             },
+            headerLeft: (
+                <Button title="" />
+            ),
+            headerRight: (
+                // <Image source={Images.add} style={[{marginRight:20}]}></Image>
+                <TouchableHighlight onPress={()=>{Alert.alert('Button has been pressed!');}} >
+                    <Image source={Images.add} style={[{marginRight:20}]}></Image>
+                </TouchableHighlight>
+
+    ),
+            title: '密码管理',
+            headerTintColor: '#dcdcdc',
+
         },
     },
 });
+
 
 export default App
